@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import LaptopSales from "./ServicesComponents/LaptopSales";
 import LaptopRepair from "./ServicesComponents/LaptopRepair";
 import Accessories from "./ServicesComponents/Accessories";
-import { IoLogoWhatsapp } from "react-icons/io5";
 
 const Services = () => {
   const [activeSection, setActiveSection] = useState("sales");
@@ -49,12 +48,10 @@ const Services = () => {
           </div>
         </div>
       </div>
-      <div className="p-2 md:p-5 md:border rounded bg-gray-50">{renderContent()}</div>
-      <div className="hidden md:flex justify-center items-center">
-        <a href={whatsAppUrl} target='_blank' rel='noopener noreferrer' className="text-xl flex rounded-md p-2 gap-2 bg-green-500 cursor-pointer text-gray-100">
-          <IoLogoWhatsapp />
-          <div className="text-sm font-semibold">Whatsapp</div>
-        </a>
+      <div className="p-2 md:p-5 md:border rounded bg-gray-50">
+        <div>{renderContent()}</div>
+        
+
       </div>
     </section>
   );

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import emailjs from 'emailjs-com';
 import contactImg from '../assets/7578341.png';
 
@@ -11,6 +11,9 @@ const Contact = () => {
     message: ''
   });
 
+  const [isLoading, setIsLoading] = useState(false);
+  const formRef = useRef(null);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -21,6 +24,8 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
+    setIsLoading(true);
+
     emailjs.send(
       'service_gzp1edg', // Replace with your EmailJS service ID
       'template_jxcjjys', // Replace with your EmailJS template ID
@@ -29,9 +34,12 @@ const Contact = () => {
     ).then((response) => {
       console.log('SUCCESS!', response.status, response.text);
       alert('Message sent successfully!');
+      formRef.current.reset();
     }).catch((err) => {
       console.error('FAILED...', err);
       alert('Failed to send message. Please try again.');
+    }).finally(() => {
+      setIsLoading(false);
     });
   };
 
@@ -43,7 +51,7 @@ const Contact = () => {
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="w-full md:w-[50%] mx-auto mt-10 p-6 rounded-lg">
-          <form onSubmit={handleSubmit} className="space-y-4">
+          <form ref={formRef} onSubmit={handleSubmit} className="space-y-4">
             <div>
               <label className="block text-sm font-medium text-gray-700 dark:text-gray-300">Name</label>
               <input
@@ -106,9 +114,10 @@ const Contact = () => {
             <div>
               <button
                 type="submit"
-                className="px-4 py-2 bg-gradient-to-tr from-red-400 to-red-600 text-white rounded-md hover:bg-red-700"
+                className={`px-4 py-2 bg-gradient-to-tr from-red-400 to-red-600 text-white rounded-md hover:bg-red-700 ${isLoading ? 'loading' : ''}`}
+                disabled={isLoading}
               >
-                Submit
+                {isLoading ? 'Sending...' : 'Submit'}
               </button>
             </div>
           </form>

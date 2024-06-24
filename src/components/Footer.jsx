@@ -1,65 +1,7 @@
-// import React from 'react'
-// import logo from '../assets/Designer-removebg-preview.png'
-
-// function Footer() {
-//     return (
-//         <section>
-//             <div class="md:flex justify-between border-t-gray-400 border-t-[1px] py-10 text-center md:text-start gap-8">
-//                 <div>
-//                     <div className='flex items-center gap-2'>
-//                         <div className='dark:text-gray-200'><img src={logo} alt="" className='w-10' /></div>
-//                         <div className='font-bold text-gray-700 underline'><span className='text-2xl text-red-500'>K</span>rishna Infotech</div>
-//                     </div>
-//                     <div className='w-80 mt-5 text-gray-800'>Address-Entrance from, 1st floor ,1 Acharya Jagadish Chandra Bose Road, Lord Sinha Road, Kolkata, West Bengal 700020</div>
-//                 </div>
-//                 <div>
-//                     <div class="ubuntu-bold mb-4 text-gray-800 dark:text-gray-200">Company</div>
-//                     <ul class="ubuntu-regular text-gray-400 text-sm flex flex-col gap-2">
-//                         <li>Home</li>
-//                         <li>Shop</li>
-//                         <li>Blogs</li>
-//                         <li>About Us</li>
-//                     </ul>
-//                 </div>
-//                 <div>
-//                     <div class="ubuntu-bold mb-4 text-gray-800 dark:text-gray-200">Services</div>
-//                     <ul class="ubuntu-regular text-gray-400 text-sm flex flex-col gap-2">
-//                         <li>Help Center</li>
-//                         <li>Private Policy</li>
-//                         <li>Term and condition</li>
-//                     </ul>
-//                 </div>
-
-//                 <div class="flex flex-col items-center">
-//                     <div class="ubuntu-bold mb-4 text-gray-800 dark:text-gray-200">Follow Us</div>
-//                     <div class="flex gap-5">
-//                         <div
-//                             class="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr w-10 h-10 rounded-md flex justify-center items-center text-white from-red-400 to-red-600">
-//                             <i class="fa-brands fa-instagram"></i>
-//                         </div>
-//                         <div
-//                             class="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr w-10 h-10 rounded-md flex justify-center items-center text-white from-red-400 to-red-600">
-//                             <i class="fa-brands fa-x-twitter"></i>
-//                         </div>
-//                         <div
-//                             class="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr w-10 h-10 rounded-md flex justify-center items-center text-white from-red-400 to-red-600">
-//                             <i class="fa-brands fa-facebook"></i>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </section>
-//     )
-// }
-
-// export default Footer
-
-
-
-
-
 import React from 'react';
 import logo from '../assets/Designer-removebg-preview.png';
+import { FaInstagram } from "react-icons/fa6";
+import { FaFacebook } from "react-icons/fa6";
 
 function Footer() {
   return (
@@ -79,10 +21,11 @@ function Footer() {
         <div className="mb-8 md:mb-0">
           <div className="ubuntu-bold mb-4 text-gray-800 dark:text-gray-200">Company</div>
           <ul className="ubuntu-regular text-gray-600 dark:text-gray-400 text-sm flex flex-col gap-2">
-            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100">Home</li>
-            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100">Shop</li>
-            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100">Blogs</li>
-            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100">About Us</li>
+            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100"><a href="#homeSection">Home</a></li>
+            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100"><a href="#aboutSection">About</a></li>
+            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100"><a href="#servicesSection">Services</a></li>
+            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100"><a href="#faqSection">Faq</a></li>
+            <li className="cursor-pointer hover:text-gray-900 dark:hover:text-gray-100"><a href="#contactSection">Contact</a></li>
           </ul>
         </div>
         <div className="mb-8 md:mb-0">
@@ -96,15 +39,12 @@ function Footer() {
         <div className="flex flex-col items-center md:items-start">
           <div className="ubuntu-bold mb-4 text-gray-800 dark:text-gray-200">Follow Us</div>
           <div className="flex gap-5">
-            <div className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr from-red-400 to-red-600 w-10 h-10 rounded-md flex justify-center items-center text-white">
-              <i className="fa-brands fa-instagram"></i>
-            </div>
-            <div className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr from-red-400 to-red-600 w-10 h-10 rounded-md flex justify-center items-center text-white">
-              <i className="fa-brands fa-x-twitter"></i>
-            </div>
-            <div className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr from-red-400 to-red-600 w-10 h-10 rounded-md flex justify-center items-center text-white">
-              <i className="fa-brands fa-facebook"></i>
-            </div>
+            <a href='https://www.instagram.com/kolkata_laptops?igsh=MXBmOGxzNDU2anE2cA==' target="_blank" rel="noopener noreferrer" className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr from-red-400 to-red-600 w-10 h-10 rounded-md flex justify-center items-center text-white">
+            <FaInstagram/>
+            </a>
+            <a href='https://www.facebook.com/refurbishedlaptopkolkata' target="_blank" rel="noopener noreferrer" className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr from-red-400 to-red-600 w-10 h-10 rounded-md flex justify-center items-center text-white">
+            <FaFacebook/>
+            </a>
           </div>
         </div>
       </div>

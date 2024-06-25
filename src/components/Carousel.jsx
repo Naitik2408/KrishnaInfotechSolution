@@ -15,7 +15,9 @@ const Carousel = ({ images, texts, subTexts }) => {
     return () => clearInterval(interval);
   }, [images.length]);
 
-  const whatsAppUrl = `https://wa.me/8582937283?text=Hello,%20I'm%20interested%20in%20your%20services.`;
+  // const whatsAppUrl = `https://wa.me/8582937283?text=Hello,%20I'm%20interested%20in%20your%20services.`;
+
+  const whatsAppUrl = `https://wa.me/9060557296?text=Hello,%20I'm%20interested%20in%20your%20service.`;
 
   return (
     <section id="homeSection" className="w-full overflow-hidden relative">

@@ -96,7 +96,7 @@ const Contact = () => {
               <input
                 type="text"
                 name="phone"
-                placeholder='(+91) 9060557296'
+                placeholder='(+91) 8582937283'
                 value={formData.phone}
                 onChange={handleChange}
                 className="mt-1 p-2 w-full border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-gray-300"

@@ -26,15 +26,30 @@ const Contact = () => {
 
     setIsLoading(true);
 
+    const templateParams = {
+      name: formData.name,
+      email: formData.email,
+      phone: formData.phone,
+      subject: formData.subject,
+      message: formData.message
+    };
+
     emailjs.send(
-      'service_gzp1edg', // Replace with your EmailJS service ID
-      'template_jxcjjys', // Replace with your EmailJS template ID
-      formData,
-      'e50CWZ92vmcKljCvn' // Replace with your EmailJS user ID
+      import.meta.env.VITE_SERVICE_ID, // Replace with your EmailJS service ID
+      import.meta.env.VITE_TEMPLATE_ID, // Replace with your EmailJS template ID
+      templateParams,
+      import.meta.env.VITE_USER_ID // Replace with your EmailJS user ID
     ).then((response) => {
-      console.log('SUCCESS!', response.status, response.text);
+      console.log('SUCCESS!', response, response.status, response.text);
       alert('Message sent successfully!');
       formRef.current.reset();
+      setFormData({
+        name: '',
+        email: '',
+        phone: '',
+        subject: '',
+        message: ''
+      });
     }).catch((err) => {
       console.error('FAILED...', err);
       alert('Failed to send message. Please try again.');
@@ -97,7 +112,6 @@ const Contact = () => {
                 value={formData.subject}
                 onChange={handleChange}
                 className="mt-1 p-2 w-full border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-gray-300"
-                required
               />
             </div>
             <div>
@@ -108,7 +122,6 @@ const Contact = () => {
                 value={formData.message}
                 onChange={handleChange}
                 className="mt-1 min-h-40 p-2 w-full border border-gray-300 dark:border-gray-600 rounded-md dark:bg-gray-700 dark:text-gray-300"
-                required
               />
             </div>
             <div>

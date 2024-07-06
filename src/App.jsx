@@ -7,6 +7,9 @@ import FAQ from './components/FAQ.jsx';
 import Footer from './components/Footer.jsx'
 import Contact from './components/Contact.jsx';
 import CompanyIcons from './components/CompanyIcons.jsx';
+import LatestProducts from './components/LatestProducts.jsx';
+import Services2 from './components/Services2.jsx';
+import RentalLaptop from './components/RentalLaptop.jsx';
 
 
 const App = () => {
@@ -28,15 +31,17 @@ const App = () => {
     "We offer a variety of laptop accessories to enhance your computing experience",
   ];
   return (
-    <div className='bg-gray-50 px-2 md:px-20 dark:bg-gray-900'>
-      <Navbar />
-      <Carousel images={images} texts={carouselTexts} subTexts={subCarouselTexts} />
-      <CompanyIcons/>
-      <About/>
-      <Services/>
-      <FAQ/>
-      <Contact/>
-      <Footer/>
+    <div className='bg-gray-50 dark:bg-gray-900'>
+      <div className='px-2 md:px-20'><Navbar /></div>
+      <div className='px-2 md:px-20'><Carousel images={images} texts={carouselTexts} subTexts={subCarouselTexts} /></div>
+      <div className='px-2 md:px-20'><CompanyIcons/></div>
+      <div className='px-2 md:px-20'><About/></div>
+      <div><RentalLaptop/></div>
+      <div className='px-2 md:px-20'><LatestProducts/></div>
+      <div className='px-2 md:px-20'><Services2/></div>
+      <div className='px-2 md:px-20'><FAQ/></div>
+      <div className='px-2 md:px-20'><Contact/></div>
+      <div><Footer/></div>
     </div>
   );
 };

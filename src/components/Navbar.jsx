@@ -91,7 +91,7 @@ const Navbar = () => {
       <div className='flex items-center gap-1'>
         <img src={logo} alt="Krishna Infotech Logo" className='w-7 md:w-10' />
         <div className='font-bold text-gray-700'>
-          <span className='text-2xl text-red-500'>K</span>rishna Infotech
+          <span className='text-2xl text-red-500'>K</span>rishna Infotech Solution
         </div>
       </div>
       <div className="flex md:hidden items-center">

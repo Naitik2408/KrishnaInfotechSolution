@@ -5,13 +5,13 @@ import { FaFacebook } from "react-icons/fa6";
 
 function Footer() {
   return (
-    <section className="bg-gray-100 dark:bg-gray-800 py-10">
+    <section className="bg-gray-100 dark:bg-gray-800 py-10 px-2 md:px-20">
       <div className="md:flex justify-between border-t-gray-400 border-t-[1px] py-10 text-center md:text-start gap-8 px-4">
         <div className="mb-8 md:mb-0">
           <div className="flex items-center justify-center md:justify-start gap-2">
             <img src={logo} alt="Logo" className="w-10" />
             <div className="font-bold text-gray-700 dark:text-gray-200 underline">
-              <span className="text-2xl text-red-500">K</span>rishna Infotech
+              <span className="text-2xl text-red-500">K</span>rishna Infotech Solution
             </div>
           </div>
           <div className="w-full md:w-80 mt-5 text-gray-800 dark:text-gray-300 mx-auto md:mx-0">

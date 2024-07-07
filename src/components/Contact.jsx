@@ -62,7 +62,7 @@ const Contact = () => {
     <section id='contactSection' className="md:my-20 md:py-24 py-12">
       <div className="text-center mb-10">
         <div className="ubuntu-bold text-3xl md:text-4xl dark:text-gray-100">Contact</div>
-        <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Our commitment to quality service"</div>
+        <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Get in Touch with Us"</div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="w-full md:w-[50%] mx-auto mt-10 p-6 rounded-lg">

@@ -8,7 +8,7 @@ function RentalLaptop() {
                 <div className='p-3 bg-white rounded-full'><LiaSlideshare /></div>
                 <div className='text-2xl font-extrabold text-white'>Laptop Rental</div>
             </div>
-            <div className='text-gray-200 font-semibold'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique quaerat ratione ea laborum, eaque natus ad omnis, sapiente praesentium perferendis earum repellat eum, sint laboriosam deserunt facere? Dolorum, nostrum labore!</div>
+            <div className='text-gray-200 font-semibold'>At <span className='underline'>Krishna Infotech Solution</span>, we believe in making technology accessible and hassle-free. Whether you're a student, professional, or business, our laptop rental service offers the latest models to suit your needs without the long-term commitment. Experience the flexibility, affordability, and convenience of renting high-performance laptops for your projects, events, or everyday tasks. Let us power your journey with reliable tech solutions, tailored just for you.</div>
         </section>
     )
 }

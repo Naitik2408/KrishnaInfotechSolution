@@ -14,7 +14,7 @@ const FAQ = () => {
       <div className="container mx-auto px-4">
         <div className="text-center text-gray-800 mb-10">
           <div className="ubuntu-bold text-3xl md:text-4xl dark:text-gray-100">Frequently Asked Questions</div>
-          <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Your queries, answered."</div>
+          <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Your Questions, Our Answers"</div>
         </div>
         <div className="flex flex-col items-center">
           <div className="w-full md:w-3/4">

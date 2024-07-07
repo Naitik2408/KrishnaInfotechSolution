@@ -15,12 +15,16 @@ import { GrCloudSoftware } from "react-icons/gr";
 import { FaHeadphonesSimple } from "react-icons/fa6";
 import { MdCable } from "react-icons/md";
 
+import accessories from '../assets/homemade-media-6l5z2EPrnFc-unsplash.jpg'
+import repair from '../assets/nikolai-chernichenko-s6uS36SF91Y-unsplash.jpg'
+import sales from '../assets/erick-cerritos-i5UV2HpITYA-unsplash.jpg'
+
 function Services2() {
     return (
         <section id="servicesSection" className="py-12 md:py-24 my-12 md:my-20">
             <div className="text-center mb-10">
                 <div className="ubuntu-bold text-3xl md:text-4xl dark:text-gray-100">Services</div>
-                <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Our commitment to quality service"</div>
+                <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Comprehensive Solutions Tailored for You"</div>
             </div>
             <div className='flex flex-col gap-12'>
 
@@ -55,7 +59,7 @@ function Services2() {
                         <div className='w-[30%]'>
                             <div className='flex justify-center'>
                                 <div className='w-64 h-64 overflow-hidden rounded-lg shadow-md shadow-gray-700'>
-                                    <img src="https://images.unsplash.com/photo-1720247522931-3fad6952f593?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                    <img src={sales} alt="" className='w-full h-full object-cover' />
                                 </div>
                             </div>
                             <div className='flex justify-center mt-5'>
@@ -92,7 +96,7 @@ function Services2() {
                         <div className='w-[30%]'>
                             <div className='flex justify-center'>
                                 <div className='w-64 h-64 overflow-hidden rounded-lg shadow-md shadow-gray-700'>
-                                    <img src="https://images.unsplash.com/photo-1720247522931-3fad6952f593?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                    <img src={repair} alt="" className='w-full h-full object-cover' />
                                 </div>
                             </div>
                             <div className='flex justify-center mt-5'>
@@ -126,7 +130,7 @@ function Services2() {
                         <div className='w-[30%]'>
                             <div className='flex justify-center'>
                                 <div className='w-64 h-64 overflow-hidden rounded-lg shadow-md shadow-gray-700'>
-                                    <img src="https://images.unsplash.com/photo-1720247522931-3fad6952f593?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" />
+                                    <img src={accessories} alt="" className='w-full h-full object-cover' />
                                 </div>
                             </div>
                             <div className='flex justify-center mt-5'>

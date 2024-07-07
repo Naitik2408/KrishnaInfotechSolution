@@ -13,7 +13,7 @@ const About = () => {
     <section id="aboutSection" className="my-12 md:my-20 py-12 md:py-24">
       <div className="text-center mb-10">
         <div className="ubuntu-bold text-3xl md:text-4xl dark:text-gray-100">About</div>
-        <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Our commitment to quality service"</div>
+        <div className="ubuntu-regular-italic text-gray-600 dark:text-gray-400">"Who We Are and What We Stand For"</div>
       </div>
       <div className="flex flex-col md:flex-row justify-between items-center md:items-start">
         <div className="w-full md:w-3/5 text-center md:text-left">

@@ -21,7 +21,9 @@ const About = () => {
             Our Journey to Excellence in <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-600">Laptop</span> Repairs
           </div>
           <div className="ubuntu-regular font-semibold text-gray-600">
-            Welcome to our shop, where our passion for technology meets our dedication to exceptional customer service. Established in 2020, our shop has been a cornerstone in the community for reliable and high-quality laptop repair services. What started as a small endeavor has grown into a trusted hub for all your laptop needs, thanks to our unwavering commitment to excellence.
+            Welcome to our shop, where our passion for technology meets our dedication to exceptional customer service.
+            Established in 2020, our shop has been a cornerstone in the community for reliable and high-quality laptop
+            sale and services.
           </div>
           {/* <div className="p-3 justify-between bg-red-200 rounded-md border border-red-600 flex items-center mt-5">
             <div className="flex items-center gap-5">
@@ -36,10 +38,10 @@ const About = () => {
           </div> */}
           <div className="flex justify-center md:justify-start items-center gap-5 mt-10 text-xl">
             <a href='https://www.instagram.com/kolkata_laptops?igsh=MXBmOGxzNDU2anE2cA==' target="_blank" rel="noopener noreferrer" className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr w-10 h-10 rounded-md flex justify-center items-center text-white from-red-400 to-red-600">
-              <FaInstagram/>
+              <FaInstagram />
             </a>
             <a href='https://www.facebook.com/refurbishedlaptopkolkata' target="_blank" rel="noopener noreferrer" className="cursor-pointer shadow-md shadow-gray-600 bg-gradient-to-tr w-10 h-10 rounded-md flex justify-center items-center text-white from-red-400 to-red-600">
-              <FaFacebook/>
+              <FaFacebook />
             </a>
           </div>
         </div>

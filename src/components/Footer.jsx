@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../assets/Designer-removebg-preview.png';
+import logo from '../assets/logo.png';
 import { FaInstagram } from "react-icons/fa6";
 import { FaFacebook } from "react-icons/fa6";
 

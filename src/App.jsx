@@ -54,8 +54,8 @@ const App = () => {
       <div className='px-2 md:px-20'><About /></div>
       <div><RentalLaptop /></div>
       <div className='px-2 md:px-20'><LatestProducts /></div>
-      <div className='px-2 md:px-20'><Services /></div>
-      {/* <div className='px-2 md:px-20'><Services2 /></div> */}
+      {/* <div className='px-2 md:px-20'><Services /></div> */}
+      <div className='px-2 md:px-20'><Services2 /></div>
       <div className='px-2 md:px-20'><FAQ /></div>
       <div className='px-2 md:px-20'><Contact /></div>
       <div><Footer /></div>

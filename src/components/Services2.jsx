@@ -19,6 +19,11 @@ import accessories from '../assets/homemade-media-6l5z2EPrnFc-unsplash.jpg'
 import repair from '../assets/nikolai-chernichenko-s6uS36SF91Y-unsplash.jpg'
 import sales from '../assets/erick-cerritos-i5UV2HpITYA-unsplash.jpg'
 
+
+const countryCode = '91'; // Replace with your country's calling code
+const phoneNumber = '8582937283'; // The phone number without country code
+const whatsAppUrl = `https://wa.me/${countryCode}${phoneNumber}?text=Hello,%20I'm%20interested%20in%20your%20service.`;
+
 function Services2() {
     return (
         <section id="servicesSection" className="py-12 md:py-24 my-12 md:my-20">
@@ -63,7 +68,10 @@ function Services2() {
                                 </div>
                             </div>
                             <div className='flex justify-center mt-5'>
-                                <div className='border border-red-500 w-fit px-20 py-1 rounded-full text-red-500 '>Contact us</div>
+                                <a href={whatsAppUrl} target='_blank' rel='noopener noreferrer' className="flex rounded-md p-2 gap-2 cursor-pointer">
+                                    <div className='border border-red-500 w-fit px-20 py-1 rounded-full text-red-500 hover:bg-red-500 hover:text-white'>Contact us</div>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -100,7 +108,10 @@ function Services2() {
                                 </div>
                             </div>
                             <div className='flex justify-center mt-5'>
-                                <div className='border border-red-500 w-fit px-20 py-1 rounded-full text-red-500 '>Contact us</div>
+                                <a href={whatsAppUrl} target='_blank' rel='noopener noreferrer' className="flex rounded-md p-2 gap-2 cursor-pointer">
+                                    <div className='border border-red-500 w-fit px-20 py-1 rounded-full text-red-500 hover:bg-red-500 hover:text-white'>Contact us</div>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
@@ -134,7 +145,10 @@ function Services2() {
                                 </div>
                             </div>
                             <div className='flex justify-center mt-5'>
-                                <div className='border border-red-500 w-fit px-20 py-1 rounded-full text-red-500 '>Contact us</div>
+                                <a href={whatsAppUrl} target='_blank' rel='noopener noreferrer' className="flex rounded-md p-2 gap-2 cursor-pointer">
+                                    <div className='border border-red-500 w-fit px-20 py-1 rounded-full text-red-500 hover:bg-red-500 hover:text-white'>Contact us</div>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>

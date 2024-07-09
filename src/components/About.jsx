@@ -1,7 +1,5 @@
 import React from 'react';
 import aboutImage from '../assets/aboutImage.png';
-import { IoLogoWhatsapp } from "react-icons/io5";
-import { FaLightbulb } from "react-icons/fa";
 import { FaInstagram, FaFacebook } from "react-icons/fa6";
 
 const About = () => {
@@ -20,7 +18,7 @@ const About = () => {
           <div className="leading-tight text-3xl md:text-5xl mb-4 text-gray-800 dark:text-gray-100 font-bold">
             Our Journey to Excellence in <span className="bg-clip-text text-transparent bg-gradient-to-r from-red-400 to-red-600">Laptop</span> Repairs
           </div>
-          <div className="ubuntu-regular font-semibold text-gray-600">
+          <div className="ubuntu-regular md:font-semibold md:text-gray-600 text-gray-500 ">
             Welcome to our shop, where our passion for technology meets our dedication to exceptional customer service.
             Established in 2020, our shop has been a cornerstone in the community for reliable and high-quality laptop
             sale and services.

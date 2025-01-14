@@ -86,7 +86,7 @@ function Services2() {
                         <div className='md:w-[70%] w-full  flex flex-col gap-4'>
                             <div className='flex gap-5 items-center text-4xl bg-gray-100 p-2 rounded-lg'>
                                 <div><SlScreenDesktop /></div>
-                                <div className='text-xl font-semibold'>creen Replacement</div>
+                                <div className='text-xl font-semibold'>Screen Replacement</div>
                             </div>
                             <div className='flex gap-5 items-center text-4xl bg-gray-100 p-2 rounded-lg'>
                                 <div><IoBatteryHalf /></div>
